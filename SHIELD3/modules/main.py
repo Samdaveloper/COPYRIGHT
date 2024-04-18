@@ -220,12 +220,12 @@ async def handle_message(client, message):
     if any(keyword in message.text for keyword in FORBIDDEN_KEYWORDS):
         logging.info(f"✦ ᴅᴇʟᴇᴛɪɴɢ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ɪᴅ {message.id}")
         await message.delete()
-       user_mention = from_user.mention
+       user_mention = msg.from_user.mention
         await message.reply_text(f"✦ ʜᴇʏ {user_mention}, ʙᴀʙʏ ᴅᴏɴ'ᴛ sᴇɴᴅ ɴᴇxᴛ ᴛɪᴍᴇ.")
-    elif any(keyword in message.caption for keyword in FORBIDDEN_KEYWORDS):
+if any(keyword in message.caption for keyword in FORBIDDEN_KEYWORDS):
         logging.info(f"✦ ᴅᴇʟᴇᴛɪɴɢ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ ɪᴅ {message.id}")
         await message.delete()
-        user_mention = from_user.mention
+        user_mention = msg.from_user.mention
         await message.reply_text(f"✦ ʜᴇʏ {user_mention}, ʙᴀʙʏ ᴅᴏɴ'ᴛ sᴇɴᴅ, ɴᴇxᴛ ᴛɪᴍᴇ.")
         
 # -------------------------------------------------------------------------------------
