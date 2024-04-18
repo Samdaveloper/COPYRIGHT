@@ -63,7 +63,7 @@ async def start(_, msg):
           InlineKeyboardButton("ʜᴇʟᴘ", callback_data="roy_back")
         ],
         [
-          InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data="gib_source"),
+          InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/Samdaveloper/COPYRIGHT"),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -103,7 +103,7 @@ async def cutebackbutton(client, callback_query: CallbackQuery, _):
               InlineKeyboardButton("ʜᴇʟᴘ", callback_data="roy_back")
             ],
             [
-              InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data="gib_source"),
+              InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/Samdaveloper/COPYRIGHT"),
             ]
         ]
         await callback_query.message.edit_caption(start_txt,  
@@ -161,7 +161,7 @@ async def start(_, msg):
     REPO_BTN = [
         [
           InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/the_friendz"),
-          InlineKeyboardButton("ʀᴇᴘᴏ", url="https://github.com/tinaarobot/COPYRIGHT"),
+          InlineKeyboardButton("ʀᴇᴘᴏ", url="https://github.com/Samdaveloper/COPYRIGHT"),
           ],
     ]
     
@@ -206,7 +206,7 @@ async def activevc(_, message: Message):
         f"❅ ᴜsᴇᴅ ➠ {size_formatter(storage.used)}\n"
         f"❅ ғʀᴇᴇ ➠ {size_formatter(storage.free)}\n"
         f"❅ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ ➠ {python_version}\n\n"
-        f"✦ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➠  ʀ ᴏ ʏ - ᴇ ᴅ ɪ ᴛ x ࿐"
+        f"✦ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➠  ᴛ ᴘ - s ᴀ ᴍ ࿐"
     )
 
     await message.reply(reply_text, reply_markup=InlineKeyboardMarkup(EVAA), quote=True)
