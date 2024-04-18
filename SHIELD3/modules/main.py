@@ -52,15 +52,15 @@ NYKAA = [
 
 start_txt = """<b> ❍ ʜɪɪ ʙᴀʙʏ, ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ᴜʜʜ !\n━━━━━━━━━━━━━━━━━━━━━━\n\n❍ ɪ ᴀᴍ ɢʀᴏᴜᴘ ᴘʀᴏᴛᴇᴄᴛɪᴏɴ ᴄᴏᴘʏʀɪɢʜᴛ ʙᴏᴛ.\n\n❍ ɪ ʜᴀᴠᴇ ɢʀᴏᴜᴘ ᴘʀᴏᴛᴇᴄᴛɪᴏɴ ғᴇᴀᴛᴜʀᴇs.\n\n❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➠ ʀ ᴏ ʏ - ᴇ ᴅ ɪ ᴛ x ࿐ </b>"""
 
-@app.on_message(filters.command("start"))
+@app.on_message(filters.command("m"))
 async def start(_, msg):
     buttons = [
         [ 
           InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="nykaa_back"),
-          InlineKeyboardButton("ʜᴇʟᴘ", callback_data="roy_back")
+          InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="GODFATHER_back"),
+          InlineKeyboardButton("ʜᴇʟᴘ", callback_data="GODFATHER_back")
         ],
         [
           InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data="gib_source"),
@@ -76,16 +76,16 @@ async def start(_, msg):
 
 gd_buttons = [              
         [
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url="https://t.me/roy_editx"),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/THE_FRIENDZ"),    
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url="https://t.me/Op_Godfather"),
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/GODFADHER_BOTS"),    
         ]
         ]
 # ------------------------------------------------------------------------------- #
 
 ROY_BTN = [              
         [
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/the_friendz"),
-            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url="https://t.me/roy_editx"),    
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/GODFADHER_BOTS"),
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", url="https://t.me/Op_Godfather"),    
         ]
 ]
 # ------------------------------------------------------------------------------- #
@@ -99,8 +99,8 @@ async def cutebackbutton(client, callback_query: CallbackQuery, _):
               InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
             ],
             [
-              InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="nykaa_back"),
-              InlineKeyboardButton("ʜᴇʟᴘ", callback_data="roy_back")
+              InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="GODFATHER_back"),
+              InlineKeyboardButton("ʜᴇʟᴘ", callback_data="GODFATHER_back")
             ],
             [
               InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data="gib_source"),
@@ -115,7 +115,7 @@ async def cutebackbutton(client, callback_query: CallbackQuery, _):
 
     
 
-@app.on_callback_query(filters.regex("nykaa_back"))
+@app.on_callback_query(filters.regex("GODFATHER_back"))
 async def nykaa_back(_, query: CallbackQuery):
     await query.message.edit_caption(ABOUT_STRING,
                                     reply_markup=InlineKeyboardMarkup(gd_buttons),)
@@ -129,7 +129,7 @@ ABOUT_STRING = """**✦ ɪ ʜᴀᴠᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀғᴜʟʟ ɢʀ�
 
 # -------------------------------------------------------------------------------------
 
-HELP_STRING = """**✽ ᴏᴡɴᴇʀ/sᴜᴅᴏ ᴜsᴇʀ ᴄᴍᴅs ⏤͟͟͞͞★\n\n❍ /bcast ➠ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀɴʏ ᴍᴇssᴀɢᴇ.\n❍ /announce ➠ ʀᴇᴘʟʏ ᴀɴʏ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀɴɴᴏᴜɴᴄᴇ.\n\n✽ ᴀʟʟ ᴜsᴇʀs  ᴄᴏᴍᴍᴀɴᴅs ⏤͟͟͞͞★\n\n❍ /start ➠ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.\n❍ /ping ➠ ᴄʜᴋ ʙᴏᴛ ᴘɪɴɢ sᴛᴀᴛs.\n❍ /repo ➠ ɢᴇᴛ ʙᴏᴛ ʀᴇᴘᴏ.\n\n❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➠  ʀ ᴏ ʏ - ᴇ ᴅ ɪ ᴛ x ࿐**"""
+HELP_STRING = """**✽ ᴏᴡɴᴇʀ/sᴜᴅᴏ ᴜsᴇʀ ᴄᴍᴅs ⏤͟͟͞͞★\n\n❍ /bcast ➠ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀɴʏ ᴍᴇssᴀɢᴇ.\n❍ /announce ➠ ʀᴇᴘʟʏ ᴀɴʏ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀɴɴᴏᴜɴᴄᴇ.\n\n✽ ᴀʟʟ ᴜsᴇʀs  ᴄᴏᴍᴍᴀɴᴅs ⏤͟͟͞͞★\n\n❍ /start ➠ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.\n❍ /ping ➠ ᴄʜᴋ ʙᴏᴛ ᴘɪɴɢ sᴛᴀᴛs.\n❍ /repo ➠ ɢᴇᴛ ʙᴏᴛ ʀᴇᴘᴏ.\n\n❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➠  ʀ ᴏ ʏ - SAM**"""
 
 # ------------------------------------------------------------------------------- #
 
@@ -142,7 +142,7 @@ EVAA = [
 # ------------------------------------------------------------------------------- #
 
 
-@app.on_callback_query(filters.regex("roy_back"))
+@app.on_callback_query(filters.regex("GODFATHER_back"))
 async def roy_back(_, query: CallbackQuery):
     await query.message.edit_caption(HELP_STRING,
                                     reply_markup=InlineKeyboardMarkup(ROY_BTN),)
@@ -160,8 +160,8 @@ REPO_STRING = """**
 async def start(_, msg):
     REPO_BTN = [
         [
-          InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/the_friendz"),
-          InlineKeyboardButton("ʀᴇᴘᴏ", url="https://github.com/tinaarobot/COPYRIGHT"),
+          InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/GODFADHER_BOTS"),
+          InlineKeyboardButton("ʀᴇᴘᴏ", url="https://t.me/GODFADHER_BOTS"),
           ],
     ]
     
